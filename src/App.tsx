@@ -1,24 +1,9 @@
-import ListGroup from "./components/ListGroup/Index";
+import { BsFillCalendarFill } from "react-icons/bs";
 
 function App() {
-  const cities = [
-    "London",
-    "Belfast",
-    "Nottingham",
-    "Birmingham",
-    "Wellington",
-  ];
-
-  const handleSelectCity = (cities: string) => {
-    console.log(cities);
-  };
   return (
     <div>
-      <ListGroup
-        cities={cities}
-        heading="Cities of England"
-        onSelectCity={handleSelectCity}
-      />
+      <BsFillCalendarFill color="blue" size={100} />
     </div>
   );
 }
